@@ -6,15 +6,28 @@ namespace DigitalConduct.Fit
     {
         static void Main()
         {
-            //Prompt the user for minutes excercised 
-            // System.Console.Write("Enter how many minutes you exercided: ");
-            Console.Write("Enter how many minutes you exercided: ");
-        
-            string entry = Console.ReadLine();
-            //Add minutes exercied to total
-            //Display total min excerised on the screen
-            Console.WriteLine("You've exercised " + entry + " min");
-            //Repeat until the user quits
+            int runningTotal = 0;
+            bool keepGoing = true;
+
+            while(keepGoing){
+                //Prompt the user for minutes excercised 
+                // System.Console.Write("Enter how many minutes you exercided: ");
+                Console.Write("Enter how many minutes you exercise or type \'quit\' to exit: ");
+                string entry = Console.ReadLine();
+
+                if(entry == "quit"){
+                    keepGoing = false;
+                    Console.WriteLine("HUA! You've exercised " + runningTotal + " See You Nextime");
+                }else{
+                    int minutes = int.Parse(entry);
+                    runningTotal = runningTotal + minutes;
+                
+                    //Add minutes exercied to total
+                    //Display total min excerised on the screen
+                    Console.WriteLine("You've exercised " + runningTotal + " min");
+                    //Repeat until the user quits
+                }
+            }
         }
     }
 }
