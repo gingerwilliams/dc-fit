@@ -1,8 +1,11 @@
-#DC-Fit
+# DC-Fit
 
-##Command Line Fitness Application
+## Command Line Fitness Application
 
-in the terminal run > mono Program.exe
+in the terminal run > 
+```
+mono Program.exe
+```
 
 <!-- 
 
