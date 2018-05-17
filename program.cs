@@ -17,14 +17,14 @@ namespace DigitalConduct.Fit
 
                 if(entry == "quit"){
                     keepGoing = false;
-                    Console.WriteLine("HUA! You've exercised " + runningTotal + " See You Nextime");
+                    Console.WriteLine("HUA! You've exercised " + runningTotal + " minutes! See You Nextime.");
                 }else{
                     int minutes = int.Parse(entry);
                     runningTotal = runningTotal + minutes;
                 
                     //Add minutes exercied to total
                     //Display total min excerised on the screen
-                    Console.WriteLine("You've exercised " + runningTotal + " min");
+                    Console.WriteLine("You've exercised " + runningTotal + " minutes");
                     //Repeat until the user quits
                 }
             }
