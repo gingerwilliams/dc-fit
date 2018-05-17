@@ -1,3 +1,9 @@
+#DC-Fit
+
+##Command Line Fitness Application
+
+in the terminal run > mono Program.exe
+
 <!-- 
 
 mcs Program.cs                                               
